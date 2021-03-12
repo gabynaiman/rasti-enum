@@ -7,7 +7,13 @@ module Rasti
     class Value < String
 
       def initialize
-        super Inflecto.underscore(Inflecto.demodulize(self.class.name)).upcase
+        super text_value
+      end
+
+      private
+
+      def text_value
+        Inflecto.underscore(Inflecto.demodulize(self.class.name)).upcase
       end
 
     end
