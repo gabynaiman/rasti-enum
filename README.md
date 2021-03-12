@@ -23,10 +23,64 @@ Or install it yourself as:
 
     $ gem install rasti-enum
 
+## Definition
+
+```ruby
+module Colors
+
+  extend Rasti::Enum
+
+  module Common
+    def red?
+      false
+    end
+
+    def green?
+      false
+    end
+
+    def blue?
+      false
+    end
+  end
+
+  class Red < Rasti::Enum::Value
+    include Common
+
+    def red?
+      true
+    end
+  end
+
+  class Green < Rasti::Enum::Value
+    include Common
+
+    def green?
+      true
+    end
+  end
+
+  class Blue < Rasti::Enum::Value
+    include Common
+
+    def blue?
+      true
+    end
+  end
+
+end
+```
+
 ## Usage
 
 ```ruby
+Colors.values # => [Colors::Blue.new, Colors::Green.new, Colors::Red.new]
 
+Colors.include?('GREEN') # => true
+Colors.include?('WHITE') # => false
+
+Colors['BLUE'].blue? # => true
+Colors['BLUE'].red? # => false
 ```
 
 ## Contributing

@@ -45,4 +45,5 @@ module Colors
       true
     end
   end
+
 end
