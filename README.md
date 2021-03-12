@@ -1,11 +1,11 @@
-# Rasti::Types
+# Rasti::Enum
 
 [![Gem Version](https://badge.fury.io/rb/rasti-enum.svg)](https://rubygems.org/gems/rasti-enum)
 [![Build Status](https://travis-ci.org/gabynaiman/rasti-enum.svg?branch=master)](https://travis-ci.org/gabynaiman/rasti-enum)
 [![Coverage Status](https://coveralls.io/repos/github/gabynaiman/rasti-enum/badge.svg?branch=master)](https://coveralls.io/github/gabynaiman/rasti-enum?branch=master)
 [![Code Climate](https://codeclimate.com/github/gabynaiman/rasti-enum.svg)](https://codeclimate.com/github/gabynaiman/rasti-enum)
 
-Type casting
+Enum objects
 
 ## Installation
 

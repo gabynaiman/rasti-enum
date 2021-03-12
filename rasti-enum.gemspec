@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rasti::Enum::VERSION
   spec.authors       = ['Gabriel Naiman']
   spec.email         = ['gabynaiman@gmail.com']
-  spec.summary       = 'Type casting'
-  spec.description   = 'Type casting'
+  spec.summary       = 'Enum objects'
+  spec.description   = 'Enum objects'
   spec.homepage      = 'https://github.com/gabynaiman/rasti-enum'
   spec.license       = 'MIT'
 
